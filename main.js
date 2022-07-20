@@ -21,8 +21,8 @@ const posicoes = document.querySelectorAll(".contagem-regressiva");
 //função que atualização os valores da contagem quando chamada
 var updateCountdown = () =>{
 
-    var currentTime = new Date();
-    var diferenca = dataPromocao - currentTime;
+    var dataAtual = new Date();
+    var diferenca = dataPromocao - dataAtual;
     dias = Math.floor(diferenca / 1000 / 60 / 60 / 24);
     horas = Math.floor(diferenca / 1000 / 60 / 60)%24;
     minutos = Math.floor(diferenca / 1000 / 60)%60;
