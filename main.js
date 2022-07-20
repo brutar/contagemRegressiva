@@ -51,7 +51,7 @@ var updateCountdown = () =>{
       
         progressbar.style.width = `${100-percentualDecrescente}%`;
 }
-//não sei se essa maneira é mais correta de usar a função setInterval, mas foi a forma que funcinou no momento. Em uma outra versão será melhor escrito isso
+//Usando a função setInterval, mas foi a forma que funcinou no momento. Em uma outra versão será melhor escrito isso
 var i = setInterval(()=>{
         if(segundos != 0 || minutos !=0 || horas != 0 || dias !=0){updateCountdown()}else{
             container.setAttribute('hidden','hidden');
