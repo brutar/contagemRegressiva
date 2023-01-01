@@ -3,7 +3,7 @@ const container = document.querySelector(".container");
 //data e hora de inicio da contagem
 const entradaDataPromocao = new Date("2022/07/18 17:32:00");
 //data e hora do fim da contagem
-const dataPromocao = new Date("2023/01/01 00:00:01");
+const dataPromocao = new Date("2024/01/01 00:00:01");
 //diferença em milisegundos
 const total = dataPromocao - entradaDataPromocao;
 
