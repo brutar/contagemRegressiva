@@ -1,11 +1,11 @@
 const progressbar = document.querySelector(".progress");
 const container = document.querySelector(".container");
 //data e hora de inicio da contagem
-const entradaDataPromocao = new Date("2022/07/18 17:32:00");
+const dataInicio = new Date("2023/01/01");
 //data e hora do fim da contagem
-const dataPromocao = new Date("2023/01/01 00:00:01");
+const dataFim= new Date("2024/01/01");
 //diferença em milisegundos
-const total = dataPromocao - entradaDataPromocao;
+const total = dataFim - dataInicio;
 
 
 var percentualDecrescente = 0;
@@ -21,8 +21,9 @@ const posicoes = document.querySelectorAll(".contagem-regressiva");
 //função que atualização os valores da contagem quando chamada
 var updateCountdown = () =>{
 
-    var dataAtual = new Date();
-    var diferenca = dataPromocao - dataAtual;
+    const dataAtual = new Date();
+    console.log(dataAtual + "aqui");
+    var diferenca = dataFim - dataAtual;
     dias = Math.floor(diferenca / 1000 / 60 / 60 / 24);
     horas = Math.floor(diferenca / 1000 / 60 / 60)%24;
     minutos = Math.floor(diferenca / 1000 / 60)%60;
